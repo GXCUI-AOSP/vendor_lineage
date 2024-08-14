@@ -1,4 +1,3 @@
-ifeq ($(WITH_GMS),true)
     # Special handling for Android TV
     ifeq ($(PRODUCT_IS_ATV),true)
         ifneq (,$(wildcard vendor/partner_gms-tv))
@@ -48,4 +47,3 @@ ifeq ($(WITH_GMS),true)
             endif
         endif
     endif
-endif

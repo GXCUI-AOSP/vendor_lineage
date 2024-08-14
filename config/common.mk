@@ -112,6 +112,9 @@ TARGET_SCREEN_HEIGHT ?= 1920
 PRODUCT_PACKAGES += \
     bootanimation.zip
 
+# Microg
+$(call inherit-product, vendor/partner/gms/products/gms.mk)
+
 # Build Manifest
 PRODUCT_PACKAGES += \
     build-manifest
