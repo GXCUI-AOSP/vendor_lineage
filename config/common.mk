@@ -113,6 +113,14 @@ PRODUCT_PACKAGES += \
 # AuroraStore
 PRODUCT_PACKAGES += AuroraDroid AuroraStore AuroraServices
 
+# Prebuilt applications
+PRODUCT_PACKAGES += \
+    BreezyWeather \
+    Calculator \
+    DuckDuckGo \
+    Hypatia \
+    KeyGo
+
 # Microg
 $(call inherit-product, vendor/partner/gms/products/gms.mk)
 
@@ -121,12 +129,6 @@ PRODUCT_PACKAGES += \
     build-manifest
 
 # Lineage packages
-ifeq ($(PRODUCT_IS_ATV),)
-PRODUCT_PACKAGES += \
-    ExactCalculator \
-    Jelly
-endif
-
 ifeq ($(PRODUCT_IS_AUTOMOTIVE),)
 PRODUCT_PACKAGES += \
     LineageParts \
